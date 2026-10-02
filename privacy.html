@@ -12,97 +12,131 @@
 <main>
   <a class="back" href="index.html">&#8249; Novelita support</a>
   <h1>Privacy <em>Policy</em></h1>
-  <p class="updated">Last updated: 18 September 2026</p>
+  <p class="updated">Last updated: 2 October 2026</p>
 
-  <p>Novelita writes fiction about two people from what you choose to bring: a chat,
-  a couple of pictures, or a few lines. This page says plainly what happens to that
-  material. Novelita is provided by TIM GABE HOLDING SOCIEDAD LIMITADA, Spain ("we"),
-  which is the controller of the personal data described here.</p>
+  <p>Novelita makes short fictional stories and videos from what you choose to bring: an
+  idea you type, the names of the people in it, pictures of them, or a WhatsApp chat. This
+  page says plainly what happens to that material. Novelita is provided by TIM GABE HOLDING
+  SOCIEDAD LIMITADA, Spain ("we"), which is the controller of the personal data described
+  here.</p>
 
   <h2>The short version</h2>
   <ul>
     <li>No account, no sign-in, no ads, no analytics or tracking SDKs.</li>
-    <li>What you bring is sent to our server to be read once, and is not stored there.</li>
-    <li>A selection of it is sent to third-party AI services to write your story. The app
-    asks for your permission before this happens.</li>
-    <li>Your stories, covers and films are kept in the app on your phone, not by us.</li>
+    <li>What you bring is sent to our server, which passes it to third-party AI services to
+    write and animate your story. Our server does not store it. The app asks for your
+    permission before anything is sent.</li>
+    <li>Pictures you add are kept on your phone and sent to fal.ai with each film, to draw
+    characters that look like the people in them.</li>
+    <li>Your stories, covers, films and pictures are kept in the app on your phone, not by
+    us.</li>
     <li>We do not sell your data, share it for advertising, or use it to train AI models.</li>
   </ul>
 
   <h2>What leaves your phone, and when</h2>
-  <p>Nothing is sent until you start a story and have given permission in the app.</p>
+  <p>Nothing is sent until you start a story or a video and have given permission in the
+  app. Everything travels over an encrypted connection.</p>
   <ul>
-    <li><strong>A chat.</strong> The export file you pick is sent to our server over an
-    encrypted connection. The server reads it in memory to find the two people, to choose a
-    selection of days from across the whole conversation, and to count habits over every
-    message (for example who writes first, at what hours, how fast you reply). The file is
-    then discarded. It is not written to a disk, a database or a log.</li>
+    <li><strong>An idea.</strong> The text you type and the names you add are sent to the AI
+    writer, which writes a short story and a script for the video.</li>
+    <li><strong>A chat.</strong> The export file you pick is sent to our server. The server
+    reads it in memory to find the two people, to choose a selection of days from across the
+    whole conversation, and to count habits over every message (for example who writes
+    first, at what hours, how fast you reply). The file is then discarded. It is not written
+    to a disk, a database or a log.</li>
     <li><strong>The selection.</strong> That selection of messages, the two first names, the
-    habit counts and any corrections you add are sent once to the AI writer, which returns
-    a short description of the two of you. Your messages are never shown back, quoted in a
-    story, or sent again. Later episodes are written from that description and the episodes
-    so far.</li>
-    <li><strong>Pictures.</strong> The one or two pictures you pick are sent once to an AI
-    vision model that writes a line about each person (hair, skin tone, eyes) and, if you
-    start from pictures, the description of the two of you. Only that text is kept, on your
-    phone. The pictures themselves are not stored and are not sent to the image or video
-    generators.</li>
-    <li><strong>A few lines.</strong> The text you type, sent once to the AI writer.</li>
-    <li><strong>Covers and films.</strong> Made from the fictional chapter and the text
-    description of its characters. Your messages and pictures are not part of this.</li>
+    habit counts and any notes or corrections you add (including an idea typed with the
+    chat) are sent to the AI writer, which returns a short description of the two of you.
+    Episodes are written from that description and the episodes so far. Your messages are
+    not shown back or quoted in a story, but an episode can include small details from the
+    chat, such as a nickname or a running joke.</li>
+    <li><strong>Pictures.</strong> Pictures are used only in the looks that draw real
+    people (such as Disney 3D and Anime), not in Viral fruit. When you start, each picture is
+    sent to an AI vision model that writes a line about the person (hair, skin tone, eyes).
+    When a film is made, the pictures are uploaded to fal.ai's file storage and sent to its
+    image model, which draws a character sheet that looks like each person. The sheets are
+    used to draw the film's frames, and the video model animates those frames. This happens
+    again with each film made in those looks.</li>
+    <li><strong>Covers.</strong> Made from the story's premise and the written description of
+    its characters. Your messages and pictures are not sent.</li>
+    <li><strong>Films.</strong> Made from the episode's text, the character descriptions and,
+    in the looks above, your pictures as described. The film's sound is transcribed by a
+    speech model to make captions. AI checks also read the script and the drawn frames and
+    sheets to catch mistakes.</li>
   </ul>
 
   <h2>Third-party AI and other processors</h2>
-  <p>We use these services to do the work. Each receives only what is listed and handles it
-  under its own terms:</p>
+  <p>We use these services to do the work. Each receives only what is needed for its part
+  and handles it under its own terms:</p>
   <ul>
-    <li><strong>Anthropic, PBC</strong> (Claude models): the selection of messages, names,
-    habit counts, notes, pictures for description, and the story so far, to write.
-    <a href="https://www.anthropic.com/legal/privacy">Privacy policy</a>.</li>
-    <li><strong>fal.ai</strong> (Features &amp; Labels, Inc.): the fictional chapter and character
-    descriptions, to draw covers and render films; and, when it is used to reach the writing
-    model, the same material as the writer above.
+    <li><strong>fal.ai</strong> (Features &amp; Labels, Inc.): our main AI provider.
+    It runs the image, video and speech models that make covers, character sheets, frames,
+    films and captions; it stores the pictures uploaded for a film; and it forwards writing
+    and picture-reading requests to the model providers below.
     <a href="https://fal.ai/privacy">Privacy policy</a>.</li>
+    <li><strong>OpenRouter, Inc.</strong>: passes writing and picture-reading requests from
+    fal.ai to the model provider.
+    <a href="https://openrouter.ai/privacy">Privacy policy</a>.</li>
+    <li><strong>Anthropic, PBC</strong> (Claude models): writes the description, the season
+    plan, the episodes and the film scripts, and reads pictures, reached through fal.ai or
+    directly. It receives the selection of
+    messages, names, habit counts, notes, your idea, pictures for description, and the story
+    so far. <a href="https://www.anthropic.com/legal/privacy">Privacy policy</a>.</li>
+    <li><strong>Google LLC</strong> (Gemini models): runs quick checks on scripts and on drawn
+    frames and character sheets, and may read pictures.
+    <a href="https://policies.google.com/privacy">Privacy policy</a>.</li>
     <li><strong>Vercel Inc.</strong>: hosts our server, so everything the app sends passes
     through it in transit. It also processes technical request data such as IP address,
     time and path to deliver and protect the service.
     <a href="https://vercel.com/legal/privacy-policy">Privacy policy</a>.</li>
     <li><strong>Apple</strong>: distributes the app and processes purchases.</li>
   </ul>
-  <p>We use these providers' business (API) services. They act as our processors, and may
-  keep inputs for a limited time for safety and abuse prevention as their terms describe. We
-  do not use your material to train AI models.</p>
+  <p>We use these providers' business (API) services. They act as our processors or
+  subprocessors, and may keep inputs for a limited time for safety and abuse prevention as
+  their terms describe. We do not use your material to train AI models.</p>
 
   <h2>What stays on your iPhone</h2>
   <ul>
     <li>Your library: stories, episodes, covers and downloaded films.</li>
-    <li>The description of the two of you, the character lines and your corrections.</li>
-    <li>Your settings, language and credit balance.</li>
+    <li>The pictures you added, in the app's folder (visible in the Files app), until you
+    delete that story.</li>
+    <li>The description of the two of you, the character lines, your idea and corrections.</li>
+    <li>Your settings, language and credit balance, and a record of films still being
+    made.</li>
   </ul>
-  <p>Deleting a story removes it. Deleting the app removes everything. We have no copy.</p>
+  <p>Deleting a story removes it and its pictures. Deleting the app removes everything. We
+  have no copy.</p>
 
   <h2>How long data is kept</h2>
   <ul>
-    <li><strong>By us:</strong> only for the seconds or minutes a request takes, in memory.</li>
-    <li><strong>By our host:</strong> technical request logs (not content) for a limited period.</li>
+    <li><strong>By us:</strong> only for the seconds or minutes a request takes, in
+    memory.</li>
+    <li><strong>By our host:</strong> technical request logs, and short error messages that
+    can include fragments of generated text such as a character description, for a limited
+    period.</li>
+    <li><strong>Pictures uploaded for a film:</strong> in fal.ai's file storage, for the
+    period set by fal.ai's terms.</li>
+    <li><strong>Covers, sheets, frames and films:</strong> at links provided by fal.ai, which
+    your phone uses to show and download them, and which expire under fal.ai's terms.</li>
     <li><strong>By the AI providers:</strong> as set out in their terms linked above.</li>
-    <li><strong>Film files:</strong> a finished film sits at a link provided by the video
-    service until your phone has downloaded it, and expires under that service's terms.</li>
   </ul>
 
   <h2>Why we are allowed to process it</h2>
   <p>Under the GDPR and similar laws we rely on: <strong>your consent</strong>, asked in the
-  app before anything is sent to third-party AI, which you can withdraw at any time by not
-  starting new stories or by deleting the app; <strong>performance of a contract</strong>, to
-  deliver the story, cover or film you asked for; and our <strong>legitimate interest</strong>
-  in keeping the service secure and preventing abuse.</p>
+  app before anything is sent to third-party AI, which you can withdraw at any time in
+  Settings (the app then asks again before your next story or video); <strong>performance of a
+  contract</strong>, to deliver the story, cover or film you asked for; and our
+  <strong>legitimate interest</strong> in keeping the service secure and preventing abuse.
+  Withdrawing consent stops new stories and videos from being sent. To stop the pictures in
+  an existing story from being sent with its future films, delete that story.</p>
 
-  <h2>Other people in your chat</h2>
-  <p>A chat has two sides, so it contains another person's personal data. Only bring a chat
-  you are part of, with the other person's consent, and never one involving a minor. The
-  stories are invented; they are not a record of what anyone said or did. If you believe
-  your messages were used without your consent, contact us. We store nothing, but we will
-  help where we can.</p>
+  <h2>Other people in your chat or pictures</h2>
+  <p>A chat has two sides, so it contains another person's personal data, and a picture
+  shows a real person. Only bring a chat you are part of, with the other person's consent,
+  and only pictures of people who agree. Never bring a chat or pictures involving a minor.
+  The stories are invented; they are not a record of what anyone said or did. If you
+  believe your messages or your picture were used without your consent, contact us. We
+  store nothing, but we will help where we can.</p>
 
   <h2>Sensitive information</h2>
   <p>Chats can contain private details such as health, beliefs or intimate matters. We do
@@ -116,8 +150,8 @@
   Commission's Standard Contractual Clauses.</p>
 
   <h2>Purchases</h2>
-  <p>Subscriptions and credit packs are billed by Apple through your Apple Account. We never
-  see your payment details. We receive only what is needed to confirm a purchase.</p>
+  <p>Credit packs are billed by Apple through your Apple Account. We never see your payment
+  details. We receive only what is needed to confirm a purchase.</p>
 
   <h2>Permissions</h2>
   <p>The app uses the system photo and file pickers, so it only ever sees the pictures and
@@ -128,8 +162,9 @@
   personal information as those terms are defined in US state privacy laws such as the CCPA.</p>
 
   <h2>Security</h2>
-  <p>Data is encrypted in transit, handled in memory and not stored by us. No method is
-  perfectly secure, so please bring only what you are comfortable sharing.</p>
+  <p>Data is encrypted in transit and handled in memory on our server, which does not store
+  it. Pictures on your phone are kept with iOS file protection. No method is perfectly
+  secure, so please bring only what you are comfortable sharing.</p>
 
   <h2>Children</h2>
   <p>Novelita is rated 13+ and is not directed to children. We do not knowingly process
@@ -149,7 +184,7 @@
   change affects what is sent to third parties, the app will ask for your permission again.</p>
 
   <h2>Contact</h2>
-  <p>Questions, requests about your data, or a concern about a chat that includes you: <a href="mailto:novelita.app@gmail.com">novelita.app@gmail.com</a></p>
+  <p>Questions, requests about your data, or a concern about a chat or picture that includes you: <a href="mailto:novelita.app@gmail.com">novelita.app@gmail.com</a></p>
 
   <p class="footer">© 2026 TIM GABE HOLDING SOCIEDAD LIMITADA</p>
 </main>
